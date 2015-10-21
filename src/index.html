@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Flexbox playground</title>
+    <style>
+    .flexbox{
+      display: flex;
+      flex-direction: column;
+      display: -webkit-flexbox;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      padding: 1rem 0 3rem;
+    }
+    .buttons{
+    }
+    .form{
+      display: flex;
+      flex-direction: row;
+    }
+    .left-form, .right-form{
+      width: 50%;
+    }
+    .flexbox .flexbox{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      flex: 1 auto;
+    }
+    .flexbox .flexbox-inner{
+      display: flex;
+      flex-wrap: nowrap;
+      flex: 1 auto;
+      flex-direction: row;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="boxes">
+        <u-flexbox></u-flexbox>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
